@@ -40,7 +40,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to UMCC Student Registration</h1>
+        <h1>Welcome to Student Registration</h1>
         <p class="lead">Please login or register to continue.</p>
         <a href="login.php" class="btn btn-primary">Login</a>
         <a href="register.php" class="btn btn-primary">Register</a>

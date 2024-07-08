@@ -8,7 +8,7 @@ if (!isset($_SESSION['user_id'])) {
 include('config.php');
 
 $user_id = $_SESSION['user_id'];
-
+z
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $first_name = $_POST['first_name'];
     $last_name = $_POST['last_name'];
