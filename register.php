@@ -52,59 +52,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <title>User Registration</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        body {
-            background-color: #f8f9fa;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .container {
-            max-width: 600px;
-            background-color: #ffffff;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-            margin-top: 50px; /* Added margin to bring the container lower */
-        }
-        .form-control {
-            border-radius: 30px;
-        }
-        .btn-primary {
-            background-color: #007bff;
-            border-color: #007bff;
-            border-radius: 30px;
-            width: 100%;
-            margin-top: 20px;
-        }
-        .btn-primary:hover {
-            background-color: #0056b3;
-            border-color: #004085;
-        }
-        .form-group label {
-            font-weight: bold;
-        }
-        h2 {
-            margin-top: 20px; /* Added margin to bring the title lower */
-            margin-bottom: 20px;
-            color: #007bff;
-            text-align: center;
-            font-size: 2rem; /* Increased font size */
-        }
-        .form-footer {
-            text-align: center;
-            margin-top: 20px;
-        }
-        .form-footer a {
-            color: #007bff;
-        }
-        .form-footer a:hover {
-            text-decoration: underline;
-        }
-    </style>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script>
         function validatePassword() {
@@ -139,7 +86,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
     <div class="container mt-5">
-        <h2 class="text-center">User Registration</h2>
+        <h2>User Registration</h2>
         <form action="register.php" method="POST" onsubmit="return validateForm();">
             <div class="form-group">
                 <label for="username">Username</label>
@@ -194,9 +141,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </select>
             </div>
             <button type="submit" class="btn btn-primary">Register</button>
-            <div class="form-footer">
-                <p>Already have an account? <a href="login.php">Login here</a></p>
-            </div>
         </form>
     </div>
 </body>
